@@ -1,6 +1,6 @@
 # ImageJ_Macros
 
-ImageJ and FIJI macros written for users of the IGMM AIR facility.
+ImageJ and FIJI macros written for users of the IGC AIR facility.
 All macros in this repository are written in IJ1 macro language
 
 Keep reading for some help with using the scripts.
