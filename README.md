@@ -7,7 +7,7 @@ Keep reading for some help with using the scripts.
 
 # How to use an ImageJ/FIJI Macro
 
-Please note that FIJI stands for FIJI Is Just ImageJ and it is a version of ImageJ which includes a huge number of useful plugins for biological microscopy. The macros written within the IGMM AIR facility always assume you are using FIJI and may not work using plain ImageJ.
+Please note that FIJI stands for FIJI Is Just ImageJ and it is a version of ImageJ which includes a huge number of useful plugins for biological microscopy. The macros written within the IGC AIR facility always assume you are using FIJI and may not work using plain ImageJ. The macro will also have "installation" instructions at the top that will describe any update sites or plugins that are needed.
 
 Macros can be written in a number of languages. The ones written by the facility are in the IJ1 language unless otherwise stated.
 
@@ -23,3 +23,17 @@ Macros can be written in a number of languages. The ones written by the facility
 *	Almost every macro created within the facility will ask you for an input folder which will contain your images. Every file format created in the facility should be supported by all macros. You will also often be asked for a folder where to save your results also.
 *	Depending on the macro, other input may be required of you. It should be obvious what that is doing.
 *	If you want to run the image on your open image, make sure you have the image (and no other images) open before you click the “Run” button on the macro window. This will let the macro know you want to run the analysis on the open image. 
+
+**Running the macro** straight from Github
+* If you go to the macro you want and click the raw button near the top right.
+* An example macro is here - https://github.com/IGC-Advanced-Imaging-Resource/ImageJ_Macros/blob/master/Test_to_run_from_Github.ijm
+* If you click the "raw" button near the top right of the top of the code you will go to a page
+* Copy the URL of that page and replace the URL within quotes below
+
+> url = "https://raw.githubusercontent.com/IGC-Advanced-Imaging-Resource/ImageJ_Macros/master/Test_to_run_from_Github.ijm";  
+> macrotext = File.openUrlAsString(url);  
+> eval(macrotext);  
+
+* Open ImageJ on your computer, open a script window by going to “Plugins” > “New” > Macro and copy the above three lines (with your changed URL). 
+* Click the run button in the bottom left
+* Success!
