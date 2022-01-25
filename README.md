@@ -25,9 +25,9 @@ Macros can be written in a number of languages. The ones written by the facility
 *	If you want to run the image on your open image, make sure you have the image (and no other images) open before you click the “Run” button on the macro window. This will let the macro know you want to run the analysis on the open image. 
 
 **Running the macro** straight from Github
-* If you go to the macro you want and click the raw button near the top right.
+* Go to the macro you want here on Github.
 * An example macro is here - https://github.com/IGC-Advanced-Imaging-Resource/ImageJ_Macros/blob/master/Test_to_run_from_Github.ijm
-* If you click the "raw" button near the top right of the top of the code you will go to a page
+* If you click the "raw" button near the top right of the top of the code you will go to a new page where the script code is shown in raw form
 * Copy the URL of that page and replace the URL within quotes below
 
 > url = "https://raw.githubusercontent.com/IGC-Advanced-Imaging-Resource/ImageJ_Macros/master/Test_to_run_from_Github.ijm";  
