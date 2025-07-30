@@ -28,6 +28,7 @@ for (img = 0; img < dirList.length; img++) {
 	Dialog.addNumber("Channels:", 0);
 	Dialog.show;
 	nChannels = Dialog.getNumber();
+	waitForUser('You will now be asked to choose the colour for each channel. Make sure that you enter the name correctly\n \nYou can check spellings by clicking Image > Color > Display LUTs \n \nClick OK to continue');
 	labels = getChannelLabels(nChannels);}
 	else{
 	//Apply channel LUTs
@@ -65,9 +66,9 @@ function getFileTree(dir, fileTree){
 function getChannelLabels(nChannels) {
     labels = newArray(nChannels);
 
-    Dialog.create("Enter Channel Labels");
+    Dialog.create("Enter Channel Colours");
     for (i = 1; i <= nChannels; i++) {
-        Dialog.addString("Label for Channel " + i + ":", "");
+        Dialog.addString("LUT for Channel " + i + ":", "");
     }
     Dialog.show();
 
