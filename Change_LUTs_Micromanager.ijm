@@ -21,6 +21,7 @@ for (img = 0; img < dirList.length; img++) {
 	path = dirList[img];
 	run("Bio-Formats Importer", "open=[" + path + "] autoscale color_mode=Composite concatenate_series rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
 	name = File.nameWithoutExtension;
+	name = substring(name, 0, lengthOf(name) - 4);
 	title = getTitle();
 	if (img == 0){
 	Dialog.create("Channels");
