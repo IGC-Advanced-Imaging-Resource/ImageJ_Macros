@@ -1,6 +1,6 @@
 /* 
  * Use this macro to change the channel colours if they were read wrongly by ImageJ  
- * James Iremonger, Advanced Imaging Resource, 30.07.25
+ * Advanced Imaging Resource, 30.07.25
  */
  
 //--------------------------------//-----------------------------------------------------------------------------------
