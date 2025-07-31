@@ -7,11 +7,11 @@
 //-- Preparation steps: Input and output folders
 //--------------------------------//-----------------------------------------------------------------------------------
 
-input = getDirectory("Select the folder with your images"); // Select folders with your LIF files inside
+input = getDirectory("Select the folder with your images"); // Select the folder containing the original images 
 output = getDirectory("Select the folder where you want to save the output"); // Select where you want your results saved
 
 dirList = newArray();
-dirList = getFileTree(input, dirList); // These two lines with the below function will find all .nd2 files (and ignore other files) in your selected folder including in all sub-folders
+dirList = getFileTree(input, dirList); 
 
 //--------------------------------//-----------------------------------------------------------------------------------
 //-- Main loop
