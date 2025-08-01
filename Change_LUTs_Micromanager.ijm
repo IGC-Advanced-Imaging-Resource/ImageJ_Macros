@@ -41,6 +41,7 @@ for (img = 0; img < dirList.length; img++) {
 		c = c+1;
     }	
 	saveAs("Tiff", output + name + '.tif');
+	run("Close All");
 }
 }
 //Macro complete
