@@ -32,8 +32,8 @@ for (img = 0; img < dirList.length; img++) {
 		waitForUser('You will now be asked to choose the colour for each channel. Make sure that you enter the name correctly\n \nYou can check spellings by clicking Image > Color > Display LUTs \n \nClick OK to continue');
 		labels = getChannelLabels(nChannels);
 		}
-//Apply channel LUTs
-c = 1;
+	//Apply channel LUTs
+	c = 1;
 	for (i = 0; i < labels.length; i++) {
 		Stack.setChannel(c);
 		run(labels[i]);
